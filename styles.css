@@ -1,0 +1,86 @@
+
+:root {
+    --colour-0: #E7F6F2;
+    --colour-1: #A5C9CA;
+    --colour-2: #395B64;
+    --colour-3: #2C3333;
+    --colour-text-main: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: auto;
+}
+
+body {
+    margin: 0px;
+    background-color: var(--colour-0);
+    color: var(--colour-3);
+}
+
+.col-span-2{
+    grid-column: span 2;
+}
+.col-span-3 {
+    grid-column: span 3;
+}
+.col-span-6 {
+    grid-column: span 6;
+}
+.center-self {
+    justify-self: center;
+}
+.center-content {
+    justify-content: center;
+}
+
+.card {
+    border: 2px var(--colour-3) solid;
+    border-radius: 1rem;
+    width: 400px;
+    margin: 10px;
+
+    text-align: center;
+    color: var(--colour-2);
+
+    box-shadow: var(--colour-3) 0px 3px 8px;
+}
+.card > div:first-of-type {
+    display: flex;
+    justify-content: center;
+    background-color: var(--colour-1);
+    height: 65px;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    color: var(--colour-3);
+}
+.card > h2 {
+    
+}
+.card > img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin: 0px;
+}
+.card > p:first-of-type{
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+.card-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}

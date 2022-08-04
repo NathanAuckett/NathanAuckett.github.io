@@ -1,10 +1,76 @@
 <!DOCTYPE html>
-<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Portfolio site for Nathan Auckett">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Nathan Auckett">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
 
-<body>
-    <p>Hello world</p>
-</body>
+    <body>
+        <div class="grid-container">
+            <head>
+                <h1 class="col-span-6 center-self">Nathan Auckett - Software Engineer</h1>
+            </head>
+            
+            <div class="col-span-6 center-self">
+                <p>
+                    Hi I'm Nathan.<br>
+                    I'm and beginner full-stack developer with 12 years worth of hobbyest game development experience.
+                </p>
+            </div>
+
+            <div id="skills" class="card-section col-span-6">
+                <h2>Skills and experience</h2>
+                
+                <div class="card-container">
+                    
+                    <div class="card">
+                        <div><h2>HTML</h2></div>
+                        <img src="./media/html.jpg">
+                        <p>I can write HTML.</p>
+                        <p>You should hire me to write HTML for you.</p>
+                    </div>
+
+                    <div class="card">
+                        <div><h2>CSS</h2></div>
+                        <img src="./media/css.jpg">
+                        <p>I can write CSS.</p>
+                        <p>You should hire me to write CSS for you.</p>
+                    </div>
+
+                    <div class="card">
+                        <div><h2>JavaScript</h2></div>
+                        <img src="./media/js.webp">
+                        <p>I can write JavaScript.</p>
+                        <p>You should hire me to write JavaScript for you.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="projects" class="card-section col-span-6">
+                <h2>Projects</h2>
+                
+                <div class="card-container">
+                    <div class="card">
+                        <div><h2>Screen Pulse</h2></div>
+                        <img src="./media/screenPulse.png">
+                        <p>Screen Pulse is a time-lapse style screen sharing app</p>
+                        <p>Written entirely in Python; Screen Pulse allows you to setup a time-lapse style live screen share between multiple computers. This provides an effecient meens to keep an eye on any screen content that needs monitoring, but not at high frame rates.</p>
+                    </div>
+                    <div class="card">
+                        <div><h2>Diceinator</h2></div>
+                        <img src="./media/diceinator.png">
+                        <p>Diceinator is a dice rolling web-app</p>
+                        <p>I made Diceinator as a practice project in order to practice my Javascript and Bootstrap knowledge.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
 
 </html>

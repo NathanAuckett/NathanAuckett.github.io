@@ -20,6 +20,7 @@ body {
     margin: 0px;
     background-color: var(--colour-0);
     color: var(--colour-3);
+    font-size: 1.1rem;
 }
 
 .col-span-12 {
@@ -90,7 +91,6 @@ body {
 }
 
 #description {
-    font-size: 1.1rem;
     border: 2px var(--colour-3) solid;
     border-radius: 1rem;
     box-shadow: var(--colour-shadow) 0px 20px 30px -10px;

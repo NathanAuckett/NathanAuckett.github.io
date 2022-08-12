@@ -41,9 +41,9 @@ class timer {
                     this.days ++;
                     this.hours -= 24;
 
-                    if (this.days > 31){
+                    if (this.days > 30){
                         this.months ++;
-                        this.days -= 31;
+                        this.days -= 30;
 
                         if (this.months > 12){
                             this.years ++;

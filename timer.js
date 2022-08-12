@@ -4,7 +4,9 @@ let dateTimeNow = new Date();
 dateTimeNow.getTime();
 
 class timer {
-    constructor(startDate) {
+    constructor(startDate, elementID) {
+        this.elementID = elementID;
+
         this.startDate = new Date(startDate);
         this.minutes = 0;
         this.hours = 0;
@@ -26,6 +28,7 @@ class timer {
         this.months = 0;
         this.years = 0;
 
+        //Run through seconds and split them into different time amounts.
         while (this.seconds > 60){
             this.minutes ++;
             this.seconds -= 60;
@@ -51,11 +54,28 @@ class timer {
             }
         }
 
-        this.timeSince = `${this.years} years, ${this.months} months, ${this.days} days, ${this.hours} hours, ${this.minutes} minutes and ${this.seconds} seconds.`;
-        console.log(this.timeSince);
+        //Generate string based on time.
+        this.timeSince = "";
+        if (this.years > 0){
+            this.timeSince += `${this.years} years, `;
+        }
+        if (this.months > 0){
+            this.timeSince += `${this.months} months, `;
+        }
+        if (this.days > 0){
+            this.timeSince += `and  ${this.days} days`;
+        }
+        // if (this.hours > 0){
+        //     this.timeSince += `${this.hours} hours, `;
+        // }
+        // if (this.minutes > 0){
+        //     this.timeSince += `${this.minutes} minutes `;
+        // }
+        // if (this.seconds > 0){
+        //     this.timeSince += `and ${this.seconds} seconds`;
+        // }
+
+        document.getElementById(this.elementID).innerHTML = "I have " + this.timeSince + " experience.";
     }
 }
 
-const timers = {
-    "GML" : new timer("01/01/2008"),
-}

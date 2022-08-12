@@ -1,10 +1,11 @@
 
 :root {
-    --colour-0: #E7F6F2;
-    --colour-1: #A5C9CA;
-    --colour-2: #395B64;
-    --colour-3: #2C3333;
-    --colour-text-main: black;
+    --colour-shadow: black;
+    --colour-0: #FEFBF6;
+    --colour-1: #A6D1E6;
+    --colour-2: #7F5283;
+    --colour-3: #3D3C42;
+    
 }
 
 .grid-container {
@@ -31,32 +32,39 @@ body {
     border-radius: 1rem;
     width: 400px;
     margin: 20px;
-
     text-align: center;
-    color: var(--colour-2);
+    overflow: hidden;
+    
+    box-shadow: var(--colour-shadow) 0px 20px 30px -10px;
+    user-select: none;
 
-    box-shadow: var(--colour-3) 0px 20px 30px -10px;
+    transition: 0.1s;
 }
-.card > div:first-of-type {
+.card div:first-of-type {
     display: flex;
     justify-content: center;
     background-color: var(--colour-1);
     height: 65px;
-    border-top-left-radius: 0.8rem;
-    border-top-right-radius: 0.8rem;
-    color: var(--colour-3);
+    /* border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem; */
 }
-
-.card > img {
+.card img {
     width: 100%;
     height: 250px;
     object-fit: cover;
     margin: 0px;
 }
-.card > p:first-of-type{
+.card p{
+    margin: 1rem;
+    text-align: left;
+}
+.card p:first-of-type{
     font-size: 1.5rem;
     margin: 0.5rem;
-    color: var(--colour-3);
+    text-align: center;
+}
+.card:hover {
+    transform: scale(1.04);
 }
 
 .card-section{
@@ -75,4 +83,40 @@ body {
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
+}
+
+#description {
+    font-size: 1.1rem;
+    border: 2px var(--colour-3) solid;
+    border-radius: 1rem;
+    box-shadow: var(--colour-shadow) 0px 20px 30px -10px;
+    grid-column-start: 4;
+    grid-column-end: 10;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--colour-2);
+}
+
+a div {
+    color: var(--colour-3);
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 2rem 0rem 2rem 0rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 1rem;
+    user-select: none;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 1rem;
 }

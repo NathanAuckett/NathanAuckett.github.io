@@ -14,8 +14,8 @@ class timer {
         this.months = 0;
         this.years = 0;
 
-        this.update();
-        setInterval(this.update.bind(this), 1000);
+        // this.update();
+        // setInterval(this.update.bind(this), 1000);
     }
 
     update (){

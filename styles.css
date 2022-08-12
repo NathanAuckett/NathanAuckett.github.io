@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Concert+One&display=swap');
+
 :root {
     --colour-shadow: black;
     --colour-0: #FEFBF6;
@@ -34,6 +36,8 @@ body {
     margin: 20px;
     text-align: center;
     overflow: hidden;
+
+    font-family: "Barlow";
     
     box-shadow: var(--colour-shadow) 0px 20px 30px -10px;
     user-select: none;
@@ -105,18 +109,21 @@ a div {
 }
 
 h1 {
+    font-family: "Concert One";
     font-size: 3rem;
     margin: 2rem 0rem 2rem 0rem;
     text-align: center;
 }
 
 h2 {
+    font-family: "Barlow";
     font-size: 2rem;
     margin: 1rem;
     user-select: none;
 }
 
 h3 {
+    font-family: "Barlow";
     font-size: 1.5rem;
     margin: 1rem;
 }

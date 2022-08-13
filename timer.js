@@ -14,12 +14,15 @@ class timer {
         this.months = 0;
         this.years = 0;
 
-        // this.update();
+        
+        this.update();
+
+        // For updating per second.
         // setInterval(this.update.bind(this), 1000);
     }
 
     update (){
-        dateTimeNow = Date.now();
+        //dateTimeNow = Date.now(); //Get new current time. (For per second updating)
 
         this.seconds = Math.floor(( dateTimeNow - this.startDate.getTime()) / 1000 );
         this.minutes = 0;

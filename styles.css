@@ -33,7 +33,7 @@ body {
 .card {
     border: 2px var(--colour-3) solid;
     border-radius: 1rem;
-    width: 400px;
+    max-width: 400px;
     margin: 20px;
     text-align: center;
     overflow: hidden;

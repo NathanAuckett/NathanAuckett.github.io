@@ -6,7 +6,7 @@ function card(cardID, title, image, summary, desc, link = null, timerStartDate =
 
     card.innerHTML = `
     <div><h3>${title}</h3></div>
-    <img src=${image}>
+    <img src=${image} alt="Screenshot of topic">
     <p id=${cardID}>${summary}</p>
     <p>${desc}</p>
     `;

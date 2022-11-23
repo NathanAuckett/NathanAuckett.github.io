@@ -3,7 +3,7 @@
         <meta charset="UTF-8">
         <title>Nathan Auckett's Portfolio</title>
         <meta name="description" content="A portfolio site showing Nathan Auckett's skills and projects.">
-        <meta name="keywords" content="nathan, auckett, software, developer, engineer, game, gamdev, indiedev, full, stack">
+        <meta name="keywords" content="nathan, auckett, software, developer, engineer, game, gamedev, indiedev, full, stack, front, end, frontend, full-stack">
         <meta name="author" content="Nathan Auckett">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -50,8 +50,8 @@
                         card(cardID = "HTMLExperience",
                         title = "HTML",
                         img = "./media/html.jpg",
-                        summary = "I can write HTML.",
-                        desc = "I'm fairly new to HTML, but I'm learning fast.");
+                        summary = "I can write clean HTML.",
+                        desc = "");
                         cardAddTimer("HTMLExperience", "2022/07/04");
                     </script>
                     
@@ -66,10 +66,12 @@
 
                     <script>
                         card(cardID = "JavaScriptExperience",
-                        title = "JavaScript",
+                        title = "JavaScript / NodeJS",
                         img = "./media/javascript.jpg",
                         summary = "I can write JavaScript.",
-                        desc = "While technically new to JavaScript, its similarities to Game Maker Language have provided an extremely stable foundation and allowed me to develop a solid understanding of even its more advanced concepts in a short time.");
+                        desc = `I have an medium to advanced understanding of JavaScript.<br>
+                                I've created multiple web applications that use JavaScript and NodeJS to power their functionality.<br>
+                                I've created NodeJS server apps, powered by the Express library to filter and serve data on request.`);
                         cardAddTimer("JavaScriptExperience", "2022/07/04");
                     </script>
 
@@ -78,8 +80,7 @@
                         title = "React",
                         img = "./media/javascript.jpg",
                         summary = "I can create react apps.",
-                        desc = `I'm still actively studying this, but am developing knowledge really quickly!<br>
-                                I'm already able to create basic apps in react.`);
+                        desc = `I am proficient in using the React JS framework. I'm able to make use of components, state, context and routes to create fast and complex react applications.`);
                         cardAddTimer("ReactExperience", "2022/08/31");
                     </script>
 
@@ -88,16 +89,17 @@
                         title = "Python",
                         img = "./media/python.jpg",
                         summary = "I can write Python.",
-                        desc = "I have developing knowledge in writing Python and have used it to create a functioning application used in a corporate environment by over 40 employees.");
+                        desc = `I have developing knowledge in writing Python and have used it to create a functioning application used in a corporate environment by over 40 employees.<br><br>
+                                Please see 'Screen Pulse' listed bellow.`);
                         cardAddTimer("PythonExperience", "2022/01/07");
                     </script>
 
                     <script>
                         card(cardID = "GMLExperience",
-                        title = "Game Maker Langauge",
+                        title = "Game Maker Language",
                         img = "./media/gml.jpg",
-                        summary = "14 years of GML experience.",
-                        desc = `I've been programing various games in Game Maker since I was 12 years old. From small apps and arcade games, to large multi-hour experiences.<br>
+                        summary = "I'm a professional in GML",
+                        desc = `I've been programming various games in Game Maker since I was 12 years old. From small apps and arcade games, to large multi-hour experiences.<br>
                                 In this time I have developed solid game design skills and an understanding of what makes a game feel good to play; as well as how to program these things.`);
                         cardAddTimer("GMLExperience", "2008/01/01");
                     </script>
@@ -122,10 +124,36 @@
 
                     <script>
                         card(cardID = "",
+                        title = "Financialinator",
+                        img = "./media/financialinator.png",
+                        summary = "A web-app that categorises and graphs your transactions",
+                        desc = `Using an nodeJS server powered by Express for the back-end and raw JavaScript for the front-end; this app allows you to load up CSV bank transaction files from your bank, categorise them and review your transaction history.<br><br>
+                                A graph is displayed showing savings over time, spendings per day or spendings per category.<br><br>
+                                This app allows you to automate the process of categorising your purchases and helps you keep track of your spendings.`,
+                        link = "https://github.com/NathanAuckett/Financialinator");
+                    </script>
+
+                    <script>
+                        card(cardID = "",
+                        title = "Noteinator",
+                        img = "./media/noteinator.png",
+                        summary = "A note taking React app",
+                        desc = `Noteintator is a simple React application that allows you to create edit and delete notes at will.<br><br>
+                                Notes can be formatted using the built in Markdown editor and preview.
+                                The notes are saved locally, on-disk, using the Chromium File System Access API.<br>
+                                This way, no internet connection is required, no personal information is transmitted on the web and your note files are always accessible wherever you choose to keep them.<br>
+                                Unfortunately, this also means no Firefox support.<br><br>
+                                This app was built to learn and practice the fundamentals of React.`,
+                        link = "https://github.com/NathanAuckett/Noteinator");
+                    </script>
+
+                    <script>
+                        card(cardID = "",
                         title = "Diceinator",
                         img = "./media/diceinator.png",
                         summary = "A dice rolling web-app.",
-                        desc = "I made Diceinator as a practice project in order to practice my Javascript and Bootstrap knowledge. This taught me the foundations of Bootstrap and how to add and remove content from a web page using plain JavaScript.",
+                        desc = `I made Diceinator as a practice project in order to practice my Javascript and Bootstrap knowledge.<br>
+                                This taught me the foundations of Bootstrap and how to add and remove content from a web page using plain JavaScript.`,
                         link = "https://github.com/NathanAuckett/Diceinator");
                     </script>
                 </div>
@@ -138,7 +166,7 @@
                         card(cardID = "",
                         title = "Elditchvania",
                         img = "./media/eldritchvania.jpg",
-                        summary = "A Metroidvania game",
+                        summary = "A sprawling Metroidvania",
                         desc = "Explore unearthly ruins, solve arcane riddles and pick up your sword against the indescribable horrors that lurk amidst the forgotten depths of our world.",
                         link = "https://gamejolt.com/games/Eldritchvania/415163");
                     </script>
@@ -147,7 +175,7 @@
                         card(cardID = "",
                         title = "The Cardinal Crusade",
                         img = "./media/cardinalCrusade.png",
-                        summary = "A challenging platformer game",
+                        summary = "A challenging action platformer",
                         desc = "The Cardinal Crusade Is an expansive action platforming game with a heavy focus on fast, challenging gameplay as well as exploration and secrets.",
                         link = "https://gamejolt.com/games/thecardinalcrusade/171762");
                     </script>
@@ -156,7 +184,7 @@
                         card(cardID = "",
                         title = "You Should Probably Move",
                         img = "./media/youShouldProbablyMove.png",
-                        summary = "A arcade wall dodging game with a twist",
+                        summary = "An arcade wall dodging game with a vertical twist",
                         desc = "You Should Probably Move is a fast passed arcade style dodging game where you can't see the incoming wall and yourself at the same time.",
                         link = "https://gamejolt.com/games/you-should-probably-move/106687");
                     </script>
